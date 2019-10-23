@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="hehedeMacBook-Pro.local" name="pytest" skipped="0" tests="4" time="3.078" timestamp="2019-10-23T17:54:15.079855"><testcase classname="3_test.TestV2exApiWithParams" file="3_test.py" line="13" name="test_node[python]" time="0.586"><failure message="assert 0">self = &lt;3_test.TestV2exApiWithParams object at 0x1109daad0&gt;, lang = &apos;python&apos;
+
+    def test_node(self, lang):
+        path = &apos;api/nodes/show.json?name=%s&apos; %(lang)
+        url = self.domain + path
+        res = requests.get(url).json()
+        assert res[&apos;name&apos;] == lang
+&gt;       assert 0
+E       assert 0
+
+3_test.py:19: AssertionError</failure></testcase><testcase classname="3_test.TestV2exApiWithParams" file="3_test.py" line="13" name="test_node[java]" time="0.569"><failure message="assert 0">self = &lt;3_test.TestV2exApiWithParams object at 0x1109fddd0&gt;, lang = &apos;java&apos;
+
+    def test_node(self, lang):
+        path = &apos;api/nodes/show.json?name=%s&apos; %(lang)
+        url = self.domain + path
+        res = requests.get(url).json()
+        assert res[&apos;name&apos;] == lang
+&gt;       assert 0
+E       assert 0
+
+3_test.py:19: AssertionError</failure></testcase><testcase classname="3_test.TestV2exApiWithParams" file="3_test.py" line="13" name="test_node[go]" time="1.256"><failure message="assert 0">self = &lt;3_test.TestV2exApiWithParams object at 0x110a11590&gt;, lang = &apos;go&apos;
+
+    def test_node(self, lang):
+        path = &apos;api/nodes/show.json?name=%s&apos; %(lang)
+        url = self.domain + path
+        res = requests.get(url).json()
+        assert res[&apos;name&apos;] == lang
+&gt;       assert 0
+E       assert 0
+
+3_test.py:19: AssertionError</failure></testcase><testcase classname="3_test.TestV2exApiWithParams" file="3_test.py" line="13" name="test_node[nodejs]" time="0.546"><failure message="assert 0">self = &lt;3_test.TestV2exApiWithParams object at 0x1109f02d0&gt;, lang = &apos;nodejs&apos;
+
+    def test_node(self, lang):
+        path = &apos;api/nodes/show.json?name=%s&apos; %(lang)
+        url = self.domain + path
+        res = requests.get(url).json()
+        assert res[&apos;name&apos;] == lang
+&gt;       assert 0
+E       assert 0
+
+3_test.py:19: AssertionError</failure></testcase></testsuite></testsuites>
