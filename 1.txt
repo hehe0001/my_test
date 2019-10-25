@@ -3,7 +3,11 @@ vfcdsf
 qqqqq
 wewedasdc
 
-master
+<<<<<<< HEAD
+master new-test
+=======
+new-test
+>>>>>>> new-test
 
 aaaaa
 231
